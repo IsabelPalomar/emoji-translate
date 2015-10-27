@@ -25,6 +25,7 @@
     max-width: 600px;
     margin: 0 auto;
     overflow: auto;
+    position: relative;
   }
 
   @media (max-width: 500px) {
@@ -81,10 +82,22 @@
   a:hover {
     color: #2196F3;
   }
+
+  .lang{
+    position: absolute;
+    right: 0px;
+    font-family: 'Lato', 'Helvetica', Arial, sans-serif;
+    font-size: 15px;
+  }
 </style>
 <body>
   <div class="container">
-    <h1>From 🇬🇧</h1>
+    <h1 class="title">From 🇬🇧 </h1>
+    <select class="lang">
+      <option value="EN">English </option>
+      <option value="ES">Spanish </option>
+      <option value="SP">Spanglish </option>
+    </select>
     <p class="note">(just start typing!)</p>
     <textarea id="input">OMG!!! The house is on fire and the cat is eating all the donuts!</textarea>
     <br><br>
@@ -93,8 +106,10 @@
     <div id="output"></div>
 
     <div id="footer">
-        <p>made with <span class="red">❤︎</span> by <a href="https://twitter.com/notwaldorf">monica</a>.
+        <p>originally made with <span class="red">❤︎</span> by <a href="https://twitter.com/notwaldorf">monica</a>.
         find this on <a href="https://github.com/notwaldorf/emoji-translate">github</a></p>
+        <p>spanish version by <a href="https://twitter.com/notwaldorf">Isabel Palomar</a>.
+        find this on <a href="https://github.com/IsabelPalomar/emoji-translate">github</a></p>
     </div>
   </div>
   <script>
